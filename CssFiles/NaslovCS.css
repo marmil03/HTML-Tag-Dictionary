@@ -1,0 +1,50 @@
+body {
+    background-color: #000;
+    color: #00fa00;
+    font-family: monospace;	
+    margin: 0;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container h1 {
+    margin: 0;
+	font-size:135px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: type 2s steps(50, end), caret-blink .8s ease infinite;
+    border-right: 10px solid #00fa00;
+}
+a{
+	text-decoration:none;
+	color: #00fa00;
+}
+
+@keyframes type {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes caret-blink {
+    0% {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #00fa00;
+    }
+
+    100% {
+        border-color: transparent;
+    }
+}
